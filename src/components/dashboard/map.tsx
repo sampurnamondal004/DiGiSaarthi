@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useState, useEffect } from 'react';
@@ -7,7 +8,6 @@ import {
   AdvancedMarker,
   Pin,
   InfoWindow,
-  Polygon,
 } from '@vis.gl/react-google-maps';
 import { tourists, highRiskZones } from '@/lib/data';
 import type { Tourist, HighRiskZone } from '@/lib/types';
@@ -38,20 +38,6 @@ function TouristMarker({ tourist }: { tourist: Tourist }) {
         </InfoWindow>
       )}
     </>
-  );
-}
-
-function RiskZonePolygon({ zone }: { zone: HighRiskZone }) {
-  const isHighRisk = zone.riskLevel > 80;
-  return (
-    <Polygon
-      paths={zone.path}
-      strokeColor={isHighRisk ? '#FF0000' : '#FFA500'}
-      strokeOpacity={0.8}
-      strokeWeight={2}
-      fillColor={isHighRisk ? '#FF0000' : '#FFA500'}
-      fillOpacity={0.25}
-    />
   );
 }
 
@@ -91,9 +77,9 @@ export function MainMap() {
           {tourists.map((tourist) => (
             <TouristMarker key={tourist.id} tourist={tourist} />
           ))}
-          {highRiskZones.map((zone) => (
+          {/* {highRiskZones.map((zone) => (
             <RiskZonePolygon key={zone.id} zone={zone} />
-          ))}
+          ))} */}
         </Map>
       </APIProvider>
     </div>
