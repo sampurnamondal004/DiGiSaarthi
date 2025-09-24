@@ -4,6 +4,8 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Users, AlertTriangle, ShieldCheck } from 'lucide-react';
 
 export default function DashboardPage() {
+  const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
+
   return (
     <div className="flex flex-col gap-4 md:gap-6 h-full">
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -52,7 +54,7 @@ export default function DashboardPage() {
       </div>
       <div className="grid gap-4 md:gap-6 lg:grid-cols-2 xl:grid-cols-3 flex-1">
         <div className="lg:col-span-1 xl:col-span-2 h-full min-h-[400px] md:min-h-0">
-          <MainMap />
+          <MainMap apiKey={apiKey} />
         </div>
         <div className="lg:col-span-1 h-full min-h-[400px] md:min-h-0">
           <AlertFeed />

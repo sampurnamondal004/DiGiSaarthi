@@ -1,7 +1,7 @@
 
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import {
   APIProvider,
   Map,
@@ -41,8 +41,7 @@ function TouristMarker({ tourist }: { tourist: Tourist }) {
   );
 }
 
-export function MainMap() {
-  const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
+export function MainMap({ apiKey }: { apiKey?: string }) {
   const position = { lat: 28.6139, lng: 77.2090 }; // Centered on Delhi
 
   if (!apiKey) {
