@@ -76,16 +76,55 @@ _Coming soon_
 
 ---
 
-## 📦 Tech Stack
+## 🧰 Tech Stack
 
-| Technology      | Purpose                             |
-|-----------------|-------------------------------------|
-| **React Native** | Cross-platform mobile application   |
-| **Node.js**      | Backend API                         |
-| **MongoDB**      | User/trip data storage              |
-| **Hyperledger Fabric / Polygon** | Blockchain-based ID ledger     |
-| **Python + scikit-learn** | AI Anomaly Detection Module     |
-| **Mapbox / Google Maps API** | Real-time location & geo-fencing  |
+### 🖥️ Frontend
+- React JS, Next JS
+- QR-Code libraries
+- Node JS
+- React Native / Flutter
+
+### 🔙 Backend
+- Node JS, Express JS
+- Redis
+- Firebase Auth
+- Ethers.js
+- Flask / FastAPI
+
+### 🤖 AI/ML
+- TensorFlow / PyTorch
+- XGBoost
+- Anonymization libraries
+- Differential Privacy
+
+### 🔌 APIs & Model Serving
+- FastAPI, Flask
+- ONNX Runtime
+- ShuftiPro’s sandbox
+- OpenStreetMap APIs
+
+### 🔗 Blockchain
+- Polygon (Mumbai Testnet)
+- Solidity
+- Remix IDE
+- Truffle
+- Metamask
+
+### 🔒 Security & Privacy
+- Hashing, End-to-End Encryption
+- JWT / OAuth2
+- HTTPS
+- Blockchain Immutability
+
+### 🚀 Deployment & DevOps
+- Vercel / Netlify / Heroku
+- Polygon Testnet Faucet
+- Docker
+- GitHub Actions
+
+### 🗄️ Databases
+- PostgreSQL
+
 
 
 ---
