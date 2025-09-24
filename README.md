@@ -86,7 +86,7 @@ _Coming soon_
 | **Hyperledger Fabric / Polygon** | Blockchain-based ID ledger     |
 | **Python + scikit-learn** | AI Anomaly Detection Module     |
 | **Mapbox / Google Maps API** | Real-time location & geo-fencing  |
-| **Raspberry Pi + BLE tags** | IoT Smart Bands (Optional)        |
+
 
 ---
 
