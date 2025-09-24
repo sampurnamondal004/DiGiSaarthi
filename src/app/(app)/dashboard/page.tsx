@@ -51,10 +51,10 @@ export default function DashboardPage() {
         </Card>
       </div>
       <div className="grid gap-4 md:gap-6 lg:grid-cols-2 xl:grid-cols-3 flex-1">
-        <div className="lg:col-span-1 xl:col-span-2 h-[400px] md:h-auto">
+        <div className="lg:col-span-1 xl:col-span-2 h-full min-h-[400px] md:min-h-0">
           <MainMap />
         </div>
-        <div className="lg:col-span-1 h-[400px] md:h-auto">
+        <div className="lg:col-span-1 h-full min-h-[400px] md:min-h-0">
           <AlertFeed />
         </div>
       </div>
