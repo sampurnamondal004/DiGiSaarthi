@@ -166,5 +166,4 @@ By **Team WinX (TEAM_ID: 52788)**
 
 
 
-npm install
-npm run android
+
