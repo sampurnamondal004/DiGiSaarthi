@@ -27,32 +27,40 @@ export function SidebarNav() {
         <SidebarGroupLabel>Main</SidebarGroupLabel>
         <SidebarMenu>
           <SidebarMenuItem>
-            <Link href="/dashboard" legacyBehavior passHref>
+            <Link href="/dashboard" passHref>
               <SidebarMenuButton
+                asChild
                 isActive={isActive('/dashboard')}
                 tooltip="Dashboard"
               >
-                <LayoutDashboard />
-                Dashboard
+                <span>
+                  <LayoutDashboard />
+                  Dashboard
+                </span>
               </SidebarMenuButton>
             </Link>
           </SidebarMenuItem>
           <SidebarMenuItem>
-            <Link href="/profile" legacyBehavior passHref>
+            <Link href="/profile" passHref>
               <SidebarMenuButton
+                asChild
                 isActive={isActive('/profile')}
                 tooltip="My Profile"
               >
-                <UserCircle />
-                My Profile
+                <span>
+                  <UserCircle />
+                  My Profile
+                </span>
               </SidebarMenuButton>
             </Link>
           </SidebarMenuItem>
           <SidebarMenuItem>
-            <Link href="/trips" legacyBehavior passHref>
-              <SidebarMenuButton isActive={isActive('/trips')} tooltip="My Trips">
-                <Users />
-                My Trips
+            <Link href="/trips" passHref>
+              <SidebarMenuButton asChild isActive={isActive('/trips')} tooltip="My Trips">
+                <span>
+                  <Users />
+                  My Trips
+                </span>
               </SidebarMenuButton>
             </Link>
           </SidebarMenuItem>
@@ -63,13 +71,16 @@ export function SidebarNav() {
         <SidebarGroupLabel>Safety</SidebarGroupLabel>
         <SidebarMenu>
           <SidebarMenuItem>
-            <Link href="/emergency" legacyBehavior passHref>
+            <Link href="/emergency" passHref>
               <SidebarMenuButton
+                asChild
                 isActive={isActive('/emergency')}
                 tooltip="Emergency"
               >
-                <ShieldAlert />
-                Emergency
+                <span>
+                  <ShieldAlert />
+                  Emergency
+                </span>
               </SidebarMenuButton>
             </Link>
           </SidebarMenuItem>
@@ -80,13 +91,16 @@ export function SidebarNav() {
         <SidebarGroupLabel>Admin Tools</SidebarGroupLabel>
         <SidebarMenu>
           <SidebarMenuItem>
-            <Link href="/risk-assessment" legacyBehavior passHref>
+            <Link href="/risk-assessment" passHref>
               <SidebarMenuButton
+                asChild
                 isActive={isActive('/risk-assessment')}
                 tooltip="Risk Assessment"
               >
-                <BarChart />
-                Risk Assessment
+                <span>
+                  <BarChart />
+                  Risk Assessment
+                </span>
               </SidebarMenuButton>
             </Link>
           </SidebarMenuItem>
