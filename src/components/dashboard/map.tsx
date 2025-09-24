@@ -9,8 +9,8 @@ import {
   Pin,
   InfoWindow,
 } from '@vis.gl/react-google-maps';
-import { tourists, highRiskZones } from '@/lib/data';
-import type { Tourist, HighRiskZone } from '@/lib/types';
+import { tourists } from '@/lib/data';
+import type { Tourist } from '@/lib/types';
 import { Card } from '../ui/card';
 import { AlertCircle } from 'lucide-react';
 
@@ -42,12 +42,7 @@ function TouristMarker({ tourist }: { tourist: Tourist }) {
 }
 
 export function MainMap() {
-  const [apiKey, setApiKey] = useState<string | null>(null);
-
-  useEffect(() => {
-    setApiKey(process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || null);
-  }, []);
-  
+  const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
   const position = { lat: 28.6139, lng: 77.2090 }; // Centered on Delhi
 
   if (!apiKey) {
@@ -77,9 +72,6 @@ export function MainMap() {
           {tourists.map((tourist) => (
             <TouristMarker key={tourist.id} tourist={tourist} />
           ))}
-          {/* {highRiskZones.map((zone) => (
-            <RiskZonePolygon key={zone.id} zone={zone} />
-          ))} */}
         </Map>
       </APIProvider>
     </div>
